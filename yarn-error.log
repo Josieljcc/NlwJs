@@ -1,5 +1,5 @@
 Arguments: 
-  /home/josiel/.nvm/versions/node/v14.17.4/bin/node /home/josiel/.nvm/versions/node/v14.17.4/bin/yarn add @types/uud -D
+  /home/josiel/.nvm/versions/node/v14.17.4/bin/node /home/josiel/.nvm/versions/node/v14.17.4/bin/yarn add jasonwebtoken
 
 PATH: 
   /home/josiel/.nvm/versions/node/v14.17.4/bin:/home/josiel/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fuud: Not found
+  Error: https://registry.yarnpkg.com/jasonwebtoken: Not found
       at Request.params.callback [as _callback] (/home/josiel/.nvm/versions/node/v14.17.4/lib/node_modules/yarn/lib/cli.js:66992:18)
       at Request.self.callback (/home/josiel/.nvm/versions/node/v14.17.4/lib/node_modules/yarn/lib/cli.js:140763:22)
       at Request.emit (events.js:400:28)
@@ -37,12 +37,14 @@ npm manifest:
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
     },
     "devDependencies": {
+      "@types/uuid": "^8.3.1",
       "ts-node-dev": "^1.1.8",
       "typescript": "^4.4.2"
     },
     "dependencies": {
       "@types/express": "^4.17.13",
       "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
       "reflect-metadata": "^0.1.13",
       "sqlite3": "^5.0.2",
       "typeorm": "^0.2.37",
@@ -134,6 +136,11 @@ Lockfile:
     version "0.0.30"
     resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
     integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+  
+  "@types/uuid@^8.3.1":
+    version "8.3.1"
+    resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.1.tgz#1a32969cf8f0364b3d8c8af9cc3555b7805df14f"
+    integrity sha512-Y2mHTRAbqfFkpjldbkHGY8JIzRN6XqYRliG8/24FcHm2D2PwW24fl5xMRTVGdrb7iMrwCaIEbLWerGIkXuFWVg==
   
   "@types/zen-observable@0.8.3":
     version "0.8.3"
@@ -594,6 +601,11 @@ Lockfile:
     version "1.8.1"
     resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
     integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+  
+  express-async-errors@^3.1.1:
+    version "3.1.1"
+    resolved "https://registry.yarnpkg.com/express-async-errors/-/express-async-errors-3.1.1.tgz#6053236d61d21ddef4892d6bd1d736889fc9da41"
+    integrity sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
   
   express@^4.17.1:
     version "4.17.1"
